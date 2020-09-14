@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proc:process xmlns:proc="http://www.example.org/proc" id="_u614wXDPEemqhLM8wrvsOw">
+  <actionCode id="_wggPAHDPEemqhLM8wrvsOw" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
+    <parameter id="_wgoK0HDPEemqhLM8wrvsOw" name="SCRIPTING_LANGUAGE" type="String" value="groovy"/>
+    <code>println &quot;Runtime ready&quot;</code>
+  </actionCode>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:proc="http://www.example.org/proc" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation http://www.eclipse.org/gmf/runtime/1.0.2/notation#/?fileId=_u614wXDPEemqhLM8wrvsOw?" xmi:id="_DllqkPQwEeqNotuAIB5-Ug" type="Proc" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_DqHlQPQwEeqNotuAIB5-Ug" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_DqNr4PQwEeqNotuAIB5-Ug" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_DqNr4fQwEeqNotuAIB5-Ug" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_DqNr4vQwEeqNotuAIB5-Ug"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DqNr4_QwEeqNotuAIB5-Ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DqNr5PQwEeqNotuAIB5-Ug"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_DqQvMPQwEeqNotuAIB5-Ug" type="7002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_DqQvMfQwEeqNotuAIB5-Ug"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_DqQvMvQwEeqNotuAIB5-Ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_DqQvM_QwEeqNotuAIB5-Ug"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_DqHlQfQwEeqNotuAIB5-Ug" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionCode" href="../../testProcess.proc#_wggPAHDPEemqhLM8wrvsOw?fileId=_u614wXDPEemqhLM8wrvsOw$type=proc$name=Scripting?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DqHlQvQwEeqNotuAIB5-Ug" x="150" y="96"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_DllqkfQwEeqNotuAIB5-Ug"/>
+  <element xmi:type="proc:ActionProcess" href="../../testProcess.proc#_u614wXDPEemqhLM8wrvsOw?fileId=_u614wXDPEemqhLM8wrvsOw$type=proc$name=testProcess?"/>
+</notation:Diagram>
+]]></diagram>
+</proc:process>

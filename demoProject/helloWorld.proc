@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proc:process xmlns:proc="http://www.example.org/proc" id="8708bf51-14a5-47bb-adad-d394712c8c44">
+  <parameter id="2167900f-1d48-4211-9f3d-71ef3a77624d" input="true" name="strIn" type="String" value=""/>
+  <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="true" name="strOut" type="String"/>
+  <actionCode id="41e5ac60-96d7-4c6d-bafc-bd10b2811ae4" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
+    <parameter id="ac522a44-ee70-4d4f-a034-dc8eb7350edc" name="SCRIPTING_LANGUAGE" type="String" value="groovy"/>
+    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;Hello ${~/strIn}$&quot;);</code>
+  </actionCode>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:proc="http://www.example.org/proc" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation http://www.eclipse.org/gmf/runtime/1.0.2/notation#/?fileId=8708bf51-14a5-47bb-adad-d394712c8c44?" xmi:id="_apElMPZdEeqnKfJyayniqA" type="Proc" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_bfZJMPZdEeqnKfJyayniqA" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_bfZwQPZdEeqnKfJyayniqA" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_bfaXUPZdEeqnKfJyayniqA" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_bfaXUfZdEeqnKfJyayniqA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_bfaXUvZdEeqnKfJyayniqA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_bfaXU_ZdEeqnKfJyayniqA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_bfaXVPZdEeqnKfJyayniqA" type="7002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_bfaXVfZdEeqnKfJyayniqA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_bfaXVvZdEeqnKfJyayniqA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_bfaXV_ZdEeqnKfJyayniqA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_bfZJMfZdEeqnKfJyayniqA" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionCode" href="../../helloWorld.proc#41e5ac60-96d7-4c6d-bafc-bd10b2811ae4?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=Scripting?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bfZJMvZdEeqnKfJyayniqA" x="178" y="75"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_dHvnEPZdEeqnKfJyayniqA" type="2005">
+    <children xmi:type="notation:Node" xmi:id="_dHw1MPZdEeqnKfJyayniqA" type="5005"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_dHvnEfZdEeqnKfJyayniqA" fontName="Segoe UI"/>
+    <element xmi:type="proc:Parameter" href="../../helloWorld.proc#2167900f-1d48-4211-9f3d-71ef3a77624d?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=strIn?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dHvnEvZdEeqnKfJyayniqA" x="677" y="63"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_fe8vAPZdEeqnKfJyayniqA" type="2005">
+    <children xmi:type="notation:Node" xmi:id="_fe-kMPZdEeqnKfJyayniqA" type="5005"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_fe8vAfZdEeqnKfJyayniqA" fontName="Segoe UI"/>
+    <element xmi:type="proc:Parameter" href="../../helloWorld.proc#09b1f26d-61a9-4fcc-bed3-c405bdbce3a1?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=strOut?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe8vAvZdEeqnKfJyayniqA" x="672" y="96"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_apElMfZdEeqnKfJyayniqA"/>
+  <element xmi:type="proc:ActionProcess" href="../../helloWorld.proc#8708bf51-14a5-47bb-adad-d394712c8c44?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=helloWorld?"/>
+</notation:Diagram>
+]]></diagram>
+</proc:process>
