@@ -3,6 +3,7 @@
   <parameter id="2167900f-1d48-4211-9f3d-71ef3a77624d" input="true" name="strIn" type="String" value=""/>
   <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="true" name="strOut" type="String"/>
   <actionCode id="41e5ac60-96d7-4c6d-bafc-bd10b2811ae4" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
+    <metaDataLink id="83c3cec6-d46f-4986-9009-8c7bc61a3552" name="var" target="folderDemo.md#_WLiRoPjIEeqKaLcg-3QcxA?fileId=_WCx-QPjIEeqKaLcg-3QcxA$type=md$name=var?"/>
     <parameter id="ac522a44-ee70-4d4f-a034-dc8eb7350edc" name="SCRIPTING_LANGUAGE" type="String" value="groovy"/>
     <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;Hello ${~/strIn}$&quot;);</code>
   </actionCode>
@@ -16,6 +17,10 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_bfaXU_ZdEeqnKfJyayniqA"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_bfaXVPZdEeqnKfJyayniqA" type="7002">
+      <children xmi:type="notation:Node" xmi:id="_aVES0PjIEeqKaLcg-3QcxA" type="3002">
+        <element xmi:type="proc:MetaDataLink" href="../../helloWorld.proc#83c3cec6-d46f-4986-9009-8c7bc61a3552?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc?"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_aVES0fjIEeqKaLcg-3QcxA"/>
+      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_bfaXVfZdEeqnKfJyayniqA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_bfaXVvZdEeqnKfJyayniqA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_bfaXV_ZdEeqnKfJyayniqA"/>
