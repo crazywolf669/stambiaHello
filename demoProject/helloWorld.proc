@@ -3,9 +3,11 @@
   <parameter id="2167900f-1d48-4211-9f3d-71ef3a77624d" input="true" name="strIn" type="String" value=""/>
   <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="true" name="strOut" type="String"/>
   <actionCode id="41e5ac60-96d7-4c6d-bafc-bd10b2811ae4" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
-    <metaDataLink id="83c3cec6-d46f-4986-9009-8c7bc61a3552" name="var" target="folderDemo.md#_WLiRoPjIEeqKaLcg-3QcxA?fileId=_WCx-QPjIEeqKaLcg-3QcxA$type=md$name=var?"/>
     <parameter id="ac522a44-ee70-4d4f-a034-dc8eb7350edc" name="SCRIPTING_LANGUAGE" type="String" value="groovy"/>
     <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;Hello ${~/strIn}$&quot;);</code>
+  </actionCode>
+  <actionCode id="ef559ab2-5a88-4599-8ced-bf2fc673eba8" enable="false" isBeginAction="false" name="FileWait" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.FileWaitActionCodeI">
+    <metaDataLink id="319734fa-d16c-451d-85ad-0b3d687f702f" name="var" target="folderDemo.md#_WLiRoPjIEeqKaLcg-3QcxA?fileId=_WCx-QPjIEeqKaLcg-3QcxA$type=md$name=var?"/>
   </actionCode>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:proc="http://www.example.org/proc" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation http://www.eclipse.org/gmf/runtime/1.0.2/notation#/?fileId=8708bf51-14a5-47bb-adad-d394712c8c44?" xmi:id="_apElMPZdEeqnKfJyayniqA" type="Proc" measurementUnit="Pixel">
@@ -17,17 +19,13 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_bfaXU_ZdEeqnKfJyayniqA"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_bfaXVPZdEeqnKfJyayniqA" type="7002">
-      <children xmi:type="notation:Node" xmi:id="_aVES0PjIEeqKaLcg-3QcxA" type="3002">
-        <element xmi:type="proc:MetaDataLink" href="../../helloWorld.proc#83c3cec6-d46f-4986-9009-8c7bc61a3552?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc?"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_aVES0fjIEeqKaLcg-3QcxA"/>
-      </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_bfaXVfZdEeqnKfJyayniqA"/>
       <styles xmi:type="notation:SortingStyle" xmi:id="_bfaXVvZdEeqnKfJyayniqA"/>
       <styles xmi:type="notation:FilteringStyle" xmi:id="_bfaXV_ZdEeqnKfJyayniqA"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_bfZJMfZdEeqnKfJyayniqA" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="../../helloWorld.proc#41e5ac60-96d7-4c6d-bafc-bd10b2811ae4?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=Scripting?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bfZJMvZdEeqnKfJyayniqA" x="178" y="75"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bfZJMvZdEeqnKfJyayniqA" x="166" y="149"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_dHvnEPZdEeqnKfJyayniqA" type="2005">
     <children xmi:type="notation:Node" xmi:id="_dHw1MPZdEeqnKfJyayniqA" type="5005"/>
@@ -40,6 +38,26 @@
     <styles xmi:type="notation:ShapeStyle" xmi:id="_fe8vAfZdEeqnKfJyayniqA" fontName="Segoe UI"/>
     <element xmi:type="proc:Parameter" href="../../helloWorld.proc#09b1f26d-61a9-4fcc-bed3-c405bdbce3a1?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=strOut?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe8vAvZdEeqnKfJyayniqA" x="672" y="96"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_BtcOEPjOEeqKaLcg-3QcxA" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_BtdcMPjOEeqKaLcg-3QcxA" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_BtdcMfjOEeqKaLcg-3QcxA" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_BtdcMvjOEeqKaLcg-3QcxA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BtdcM_jOEeqKaLcg-3QcxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BtdcNPjOEeqKaLcg-3QcxA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_BtdcNfjOEeqKaLcg-3QcxA" type="7002">
+      <children xmi:type="notation:Node" xmi:id="_CfR6sPjOEeqKaLcg-3QcxA" type="3002">
+        <element xmi:type="proc:MetaDataLink" href="../../helloWorld.proc#319734fa-d16c-451d-85ad-0b3d687f702f?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc?"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_CfR6sfjOEeqKaLcg-3QcxA"/>
+      </children>
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_BtdcNvjOEeqKaLcg-3QcxA"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_BtdcN_jOEeqKaLcg-3QcxA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_BtdcOPjOEeqKaLcg-3QcxA"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_BtcOEfjOEeqKaLcg-3QcxA" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionCode" href="../../helloWorld.proc#ef559ab2-5a88-4599-8ced-bf2fc673eba8?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=FileWait?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BtcOEvjOEeqKaLcg-3QcxA" x="504" y="162"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_apElMfZdEeqnKfJyayniqA"/>
   <element xmi:type="proc:ActionProcess" href="../../helloWorld.proc#8708bf51-14a5-47bb-adad-d394712c8c44?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=helloWorld?"/>
