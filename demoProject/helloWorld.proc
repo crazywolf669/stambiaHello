@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<proc:process xmlns:proc="http://www.example.org/proc" id="8708bf51-14a5-47bb-adad-d394712c8c44">
+<proc:process xmlns:proc="http://www.example.org/proc" id="8708bf51-14a5-47bb-adad-d394712c8c44" metaInf="&lt;httpRestWebServiceProperties path=&quot;Hello&quot;  methods=&quot;get&quot;>&#xD;&#xA;&lt;/httpRestWebServiceProperties>">
   <parameter id="2167900f-1d48-4211-9f3d-71ef3a77624d" input="true" name="strIn" type="String" value=""/>
   <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="true" name="strOut" type="String"/>
   <actionCode id="41e5ac60-96d7-4c6d-bafc-bd10b2811ae4" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
