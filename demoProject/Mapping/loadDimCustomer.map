@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_LuXCwPsmEeqy2ponh5Sc5g" internalVersion="7" tech="platform:/plugin/com.indy.environment/technology/map/map.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_MxodoPsmEeqy2ponh5Sc5g" alias="DIM_CUSTOMER" dataset="_Mxy1uvsmEeqy2ponh5Sc5g" ref="../Metadata/Datamart.md#_AZcY8fsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=DIM_CUSTOMER?" subExpression="[A]">
+    <field id="_MxyOoPsmEeqy2ponh5Sc5g" enable="true" insert="true" name="CUS_NAME" ref="../Metadata/Datamart.md#_AZjGp_smEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=CUS_NAME?" update="true">
+      <expression id="_PBMFcPsmEeqy2ponh5Sc5g" setDescriptorRef="_PBK3UPsmEeqy2ponh5Sc5g">
+        <expression>T_CUSTOMER.CUS_FIRST_NAME + T_CUSTOMER.CUS_LAST_NAME</expression>
+      </expression>
+    </field>
+    <field id="_MxyOovsmEeqy2ponh5Sc5g" enable="true" insert="true" name="CUS_COMPANY" ref="../Metadata/Datamart.md#_AZjGtfsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=CUS_COMPANY?" update="true">
+      <expression id="_PBMFcfsmEeqy2ponh5Sc5g" setDescriptorRef="_PBK3UPsmEeqy2ponh5Sc5g">
+        <expression>T_CUSTOMER.CUS_COMPANY</expression>
+      </expression>
+    </field>
+    <field id="_MxyOpPsmEeqy2ponh5Sc5g" name="UPDATE_DATE" ref="../Metadata/Datamart.md#_AZjGxPsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=UPDATE_DATE?">
+      <expression id="_PBMFcvsmEeqy2ponh5Sc5g" setDescriptorRef="_PBK3UPsmEeqy2ponh5Sc5g">
+        <expression></expression>
+      </expression>
+    </field>
+    <field id="_MxodpPsmEeqy2ponh5Sc5g" name="CUS_TITLE" ref="../Metadata/Datamart.md#_AZjGoPsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=CUS_TITLE?">
+      <expression id="_PBMFc_smEeqy2ponh5Sc5g" setDescriptorRef="_PBK3UPsmEeqy2ponh5Sc5g">
+        <expression></expression>
+      </expression>
+    </field>
+    <field id="_MxyOo_smEeqy2ponh5Sc5g" name="GEO_KEY_ID" ref="../Metadata/Datamart.md#_AZjGvPsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=GEO_KEY_ID?">
+      <expression id="_PBMFdPsmEeqy2ponh5Sc5g" setDescriptorRef="_PBK3UPsmEeqy2ponh5Sc5g">
+        <expression></expression>
+      </expression>
+    </field>
+    <field id="_MxodovsmEeqy2ponh5Sc5g" name="CUS_KEY_ID" ref="../Metadata/Datamart.md#_AZifkPsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=CUS_KEY_ID?" updateKey="true">
+      <expression id="_PBMFdfsmEeqy2ponh5Sc5g" setDescriptorRef="_PBK3UPsmEeqy2ponh5Sc5g">
+        <expression></expression>
+      </expression>
+    </field>
+    <field id="_Mxodo_smEeqy2ponh5Sc5g" enable="true" insert="true" name="CUS_ID" ref="../Metadata/Datamart.md#_AZifmPsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=CUS_ID?" update="true">
+      <expression id="_PBRlAPsmEeqy2ponh5Sc5g" setDescriptorRef="_PBK3UPsmEeqy2ponh5Sc5g">
+        <expression>T_CUSTOMER.CUS_ID</expression>
+      </expression>
+    </field>
+    <field id="_MxyOofsmEeqy2ponh5Sc5g" name="CUS_FORNAME" ref="../Metadata/Datamart.md#_AZjGrvsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=CUS_FORNAME?">
+      <expression id="_PBRlAfsmEeqy2ponh5Sc5g" setDescriptorRef="_PBK3UPsmEeqy2ponh5Sc5g">
+        <expression></expression>
+      </expression>
+    </field>
+    <constraint id="_MxyOpfsmEeqy2ponh5Sc5g" name="PK_DIM_CUSTOMER" ref="../Metadata/Datamart.md#_AZkUwPsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=PK_DIM_CUSTOMER?" reject="true"/>
+    <constraint id="_Mxy1sPsmEeqy2ponh5Sc5g" name="FK_DIM_CUSTOMER_GEO" ref="../Metadata/Datamart.md#_AZuFwPsmEeqy2ponh5Sc5g?fileId=_98DJcPslEeqy2ponh5Sc5g$type=md$name=FK_DIM_CUSTOMER_GEO?" reject="true"/>
+    <setDescriptor id="_PBK3UPsmEeqy2ponh5Sc5g" label="A"/>
+  </datastore>
+  <datastore id="_No6q8PsmEeqy2ponh5Sc5g" alias="T_CUSTOMER" dataset="_NpD07vsmEeqy2ponh5Sc5g" ref="../Metadata/Hotel.md#_rL-8sfslEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=T_CUSTOMER?">
+    <field id="_NpD04PsmEeqy2ponh5Sc5g" fullAlias="CUS_ID" name="CUS_ID" ref="../Metadata/Hotel.md#_rMEcQPslEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=CUS_ID?" updateKey="true"/>
+    <field id="_NpD04fsmEeqy2ponh5Sc5g" name="TIT_CODE" ref="../Metadata/Hotel.md#_rMEcSPslEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=TIT_CODE?"/>
+    <field id="_NpD05PsmEeqy2ponh5Sc5g" fullAlias="CUS_COMPANY" name="CUS_COMPANY" ref="../Metadata/Hotel.md#_rMFDXvslEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=CUS_COMPANY?"/>
+    <field id="_NpD05fsmEeqy2ponh5Sc5g" name="CUS_BIRTH_DATE" ref="../Metadata/Hotel.md#_rMFDZfslEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=CUS_BIRTH_DATE?"/>
+    <field id="_NpD04vsmEeqy2ponh5Sc5g" fullAlias="CUS_LAST_NAME" name="CUS_LAST_NAME" ref="../Metadata/Hotel.md#_rMFDUPslEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=CUS_LAST_NAME?"/>
+    <field id="_NpD04_smEeqy2ponh5Sc5g" fullAlias="CUS_FIRST_NAME" name="CUS_FIRST_NAME" ref="../Metadata/Hotel.md#_rMFDV_slEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=CUS_FIRST_NAME?"/>
+    <constraint id="_NpD05vsmEeqy2ponh5Sc5g" name="PK_T_CUSTOMER" ref="../Metadata/Hotel.md#_rMG4gPslEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=PK_T_CUSTOMER?" reject="true"/>
+    <constraint id="_NpD05_smEeqy2ponh5Sc5g" name="FK_CUSTOMER_TITLE" ref="../Metadata/Hotel.md#_rNIMMPslEeqy2ponh5Sc5g?fileId=_MOjbMPslEeqy2ponh5Sc5g$type=md$name=FK_CUSTOMER_TITLE?" reject="true"/>
+  </datastore>
+  <template id="_PBSzLvsmEeqy2ponh5Sc5g" name="I_DIM_CUSTOMER" process="platform:/plugin/com.indy.environment/templates/templates.generic/Rdbms/Hsql/INTEGRATION%20Hsql.tp.proc#_HFOfdjEZEd-WZe6cNi2k2w?fileId=_HFOfdjEZEd-WZe6cNi2k2w$type=proc$name=INTEGRATION%20Hsql?" targetId="_MxodoPsmEeqy2ponh5Sc5g"/>
+  <template id="_PFkPJvsmEeqy2ponh5Sc5g" name="L1_DIM_CUSTOMER" process="platform:/plugin/com.indy.environment/templates/templates.generic/Rdbms/LOAD%20Rdbms%20to%20Rdbms.tp.proc#_aafbe681-11ab-4ebc-ab56-de794128c580?fileId=_aafbe681-11ab-4ebc-ab56-de794128c580$type=proc$name=LOAD%20Rdbms%20to%20Rdbms?" sourceId="_No6q8PsmEeqy2ponh5Sc5g" targetId="_MxodoPsmEeqy2ponh5Sc5g"/>
+  <dataSet id="_Mxy1uvsmEeqy2ponh5Sc5g">
+    <container>_MxodoPsmEeqy2ponh5Sc5g</container>
+  </dataSet>
+  <dataSet id="_NpD07vsmEeqy2ponh5Sc5g">
+    <container>_No6q8PsmEeqy2ponh5Sc5g</container>
+  </dataSet>
+  <hint>
+    <usedField>#_NpD04PsmEeqy2ponh5Sc5g</usedField>
+    <usedField>#_NpD05PsmEeqy2ponh5Sc5g</usedField>
+    <usedField>#_NpD04vsmEeqy2ponh5Sc5g</usedField>
+    <usedField>#_NpD04_smEeqy2ponh5Sc5g</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_LxcL8vsmEeqy2ponh5Sc5g" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_NpD0-fsmEeqy2ponh5Sc5g" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_NpD0-_smEeqy2ponh5Sc5g" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NpD0_PsmEeqy2ponh5Sc5g" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NpD0_fsmEeqy2ponh5Sc5g" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NpD0_vsmEeqy2ponh5Sc5g" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NpD0__smEeqy2ponh5Sc5g" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_NpD1APsmEeqy2ponh5Sc5g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_NpD1AfsmEeqy2ponh5Sc5g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NpD1AvsmEeqy2ponh5Sc5g" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_NpD1A_smEeqy2ponh5Sc5g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_NpD1BPsmEeqy2ponh5Sc5g" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_NpD1BfsmEeqy2ponh5Sc5g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_NpD1BvsmEeqy2ponh5Sc5g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_NpD1B_smEeqy2ponh5Sc5g" type="7007"/>
+    <element xmi:type="map:Datastore" href="../../loadDimCustomer.map#_No6q8PsmEeqy2ponh5Sc5g?fileId=_LuXCwPsmEeqy2ponh5Sc5g$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NpD0-vsmEeqy2ponh5Sc5g" x="30" y="50"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_MyFwoPsmEeqy2ponh5Sc5g" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_MyFwovsmEeqy2ponh5Sc5g" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_MyFwo_smEeqy2ponh5Sc5g" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_MyFwpPsmEeqy2ponh5Sc5g" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_MyFwpfsmEeqy2ponh5Sc5g" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_MyPhoPsmEeqy2ponh5Sc5g" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_MyPhofsmEeqy2ponh5Sc5g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_MyPhovsmEeqy2ponh5Sc5g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_MyPho_smEeqy2ponh5Sc5g" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_MyPhpPsmEeqy2ponh5Sc5g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_MyPhpfsmEeqy2ponh5Sc5g" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_MyPhpvsmEeqy2ponh5Sc5g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_MyPhp_smEeqy2ponh5Sc5g"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_MzEBAPsmEeqy2ponh5Sc5g" type="7007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_MzEBAfsmEeqy2ponh5Sc5g" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_MzEBAvsmEeqy2ponh5Sc5g"/>
+    </children>
+    <element xmi:type="map:Datastore" href="../../loadDimCustomer.map#_MxodoPsmEeqy2ponh5Sc5g?fileId=_LuXCwPsmEeqy2ponh5Sc5g$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MyFwofsmEeqy2ponh5Sc5g" x="296" y="30"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_LxcL8_smEeqy2ponh5Sc5g"/>
+  <element xmi:type="map:Map" href="../../loadDimCustomer.map#_LuXCwPsmEeqy2ponh5Sc5g?fileId=_LuXCwPsmEeqy2ponh5Sc5g$type=map$name=loadDimCustomer?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_PFR7QPsmEeqy2ponh5Sc5g" type="targetLink" source="_MyFwoPsmEeqy2ponh5Sc5g" target="_NpD0-fsmEeqy2ponh5Sc5g">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PFR7QfsmEeqy2ponh5Sc5g" points="[0, 0, 60, 0]$[-60, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SUXGYPsmEeqy2ponh5Sc5g" id="(0.0,0.4975369458128079)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SUXGYfsmEeqy2ponh5Sc5g" id="(1.0,0.49693251533742333)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_PFYB4PsmEeqy2ponh5Sc5g" type="targetDataSetLink" source="_MyFwoPsmEeqy2ponh5Sc5g" target="_MyFwoPsmEeqy2ponh5Sc5g">
+    <element xmi:type="map:DataSet" href="../../loadDimCustomer.map#_NpD07vsmEeqy2ponh5Sc5g?fileId=_LuXCwPsmEeqy2ponh5Sc5g$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PFYB4fsmEeqy2ponh5Sc5g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_PFYB4vsmEeqy2ponh5Sc5g" type="targetSetLink" source="_MyFwoPsmEeqy2ponh5Sc5g" target="_MyFwoPsmEeqy2ponh5Sc5g">
+    <element xmi:type="map:SetDescriptor" href="../../loadDimCustomer.map#_PBK3UPsmEeqy2ponh5Sc5g?fileId=_LuXCwPsmEeqy2ponh5Sc5g$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PFYB4_smEeqy2ponh5Sc5g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>

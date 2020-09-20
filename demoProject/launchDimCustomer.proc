@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proc:process xmlns:proc="http://www.example.org/proc" id="f4b657f5-5826-4854-b7bc-ff6cd6fcdbc1">
+  <actionProcessRef id="6c59a75e-f355-4fe3-a27b-584622a9c1cd" isBeginAction="false" name="loadDimCustomer" nbCycles="-1" toleratedError="false" processMap="true" targetName="Mapping/loadDimCustomer.map#_LuXCwPsmEeqy2ponh5Sc5g?fileId=_LuXCwPsmEeqy2ponh5Sc5g$name=loadDimCustomer$type=map?"/>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:proc="http://www.example.org/proc" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation http://www.eclipse.org/gmf/runtime/1.0.2/notation#/?fileId=f4b657f5-5826-4854-b7bc-ff6cd6fcdbc1?" xmi:id="_ebZJpvsmEeqy2ponh5Sc5g" type="Proc" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_eljLMPsmEeqy2ponh5Sc5g" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_eljLM_smEeqy2ponh5Sc5g" type="5003"/>
+    <children xmi:type="notation:Node" xmi:id="_eljLNPsmEeqy2ponh5Sc5g" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_eljLNfsmEeqy2ponh5Sc5g" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eljLNvsmEeqy2ponh5Sc5g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eljLN_smEeqy2ponh5Sc5g"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_eljLOPsmEeqy2ponh5Sc5g" type="7004">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_eljLOfsmEeqy2ponh5Sc5g"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eljLOvsmEeqy2ponh5Sc5g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eljLO_smEeqy2ponh5Sc5g"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_eljLMfsmEeqy2ponh5Sc5g" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionProcessRef" href="../../launchDimCustomer.proc#6c59a75e-f355-4fe3-a27b-584622a9c1cd?fileId=f4b657f5-5826-4854-b7bc-ff6cd6fcdbc1$type=proc$name=loadDimCustomer?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eljLMvsmEeqy2ponh5Sc5g" x="143" y="65"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_ebZJp_smEeqy2ponh5Sc5g"/>
+  <element xmi:type="proc:ActionProcess" href="../../launchDimCustomer.proc#f4b657f5-5826-4854-b7bc-ff6cd6fcdbc1?fileId=f4b657f5-5826-4854-b7bc-ff6cd6fcdbc1$type=proc$name=launchDimCustomer?"/>
+</notation:Diagram>
+]]></diagram>
+</proc:process>
