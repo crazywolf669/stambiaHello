@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<proc:process xmlns:proc="http://www.example.org/proc" id="8708bf51-14a5-47bb-adad-d394712c8c44" metaInf="&lt;httpRestWebServiceProperties path=&quot;Hello&quot;  methods=&quot;get&quot;>&#xD;&#xA;&lt;/httpRestWebServiceProperties>">
+<proc:process xmlns:proc="http://www.example.org/proc" id="8708bf51-14a5-47bb-adad-d394712c8c44" metaInf="&lt;httpRestWebServiceProperties path=&quot;Hello&quot;  methods=&quot;get&quot;  extractRequestInfo=&quot;true&quot;>&#xD;&#xA;&#x9;&lt;responseBodyMapper parameterName=&quot;strOut&quot; charset=&quot;UTF-8&quot;/>&#xD;&#xA;&lt;/httpRestWebServiceProperties>">
   <parameter id="2167900f-1d48-4211-9f3d-71ef3a77624d" input="true" name="strIn" type="String" value=""/>
-  <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="true" name="strOut" type="String"/>
+  <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="false" name="strOut" type="String"/>
   <actionCode id="41e5ac60-96d7-4c6d-bafc-bd10b2811ae4" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
     <link id="f131021b-063d-4a80-9036-a39741c98230" executionCondition="1==2" executionType="OK" generationType="OK_KO" mandatory="1" targetId="ef559ab2-5a88-4599-8ced-bf2fc673eba8"/>
     <parameter id="ac522a44-ee70-4d4f-a034-dc8eb7350edc" name="SCRIPTING_LANGUAGE" type="String" value="groovy"/>
-    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;Hello--${~/strIn}$--Version 1.0&quot;);</code>
+    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;&lt;html>&lt;head>&lt;title>Hello World page&lt;/title>&lt;/head>&lt;body>&lt;h1>Hello ${~/strIn}$ !!&lt;/h1>&lt;p>Version 1.0&lt;/p>&lt;/body>&lt;/html>&quot;);</code>
   </actionCode>
   <actionCode id="ef559ab2-5a88-4599-8ced-bf2fc673eba8" enable="true" isBeginAction="false" name="FileWait" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.FileWaitActionCodeI">
     <metaDataLink id="319734fa-d16c-451d-85ad-0b3d687f702f" name="var" target="../Metadata/folderDemo.md#_WLiRoPjIEeqKaLcg-3QcxA?fileId=_WCx-QPjIEeqKaLcg-3QcxA$type=md$name=var?"/>
