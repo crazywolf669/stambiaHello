@@ -1,0 +1,2 @@
+buildPackage -mainProcessWorkspacePath "demoProject/Process/launchDimCustomer.proc" -package "./launchDimCustomer.pck"
+buildDelivery -package "./launchDimCustomer.pck" -buildmode substitution -confFile "demoProject/Build/launchDimCustomer.conf"  -outputFolder "./deliveries/" -verbose true
