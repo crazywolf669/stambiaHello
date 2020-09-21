@@ -5,7 +5,7 @@
   <actionCode id="41e5ac60-96d7-4c6d-bafc-bd10b2811ae4" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
     <link id="f131021b-063d-4a80-9036-a39741c98230" executionCondition="1==2" executionType="OK" generationType="OK_KO" mandatory="1" targetId="ef559ab2-5a88-4599-8ced-bf2fc673eba8"/>
     <parameter id="ac522a44-ee70-4d4f-a034-dc8eb7350edc" name="SCRIPTING_LANGUAGE" type="String" value="groovy"/>
-    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;Hello--${~/strIn}$--Version 1.0&quot;);</code>
+    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;Hello--${~/strIn}$--Version 2.0&quot;);</code>
   </actionCode>
   <actionCode id="ef559ab2-5a88-4599-8ced-bf2fc673eba8" enable="true" isBeginAction="false" name="FileWait" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.FileWaitActionCodeI">
     <metaDataLink id="319734fa-d16c-451d-85ad-0b3d687f702f" name="var" target="../Metadata/folderDemo.md#_WLiRoPjIEeqKaLcg-3QcxA?fileId=_WCx-QPjIEeqKaLcg-3QcxA$type=md$name=var?"/>
