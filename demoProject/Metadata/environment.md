@@ -3,5 +3,6 @@
   <node defType="com.stambia.variable.variable" id="_12ha0A1PEeucEKGg0rk6tw" name="envName">
     <attribute defType="com.stambia.variable.variable.defaultValue" id="_3btP8A1PEeucEKGg0rk6tw" value="DEV"/>
     <attribute defType="com.stambia.variable.variable.type" id="_4ObtYA1PEeucEKGg0rk6tw" value="String"/>
+    <externalize defType="com.stambia.variable.variable.defaultValue" enable="true"/>
   </node>
 </md:node>

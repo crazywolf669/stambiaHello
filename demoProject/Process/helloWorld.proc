@@ -2,6 +2,7 @@
 <proc:process xmlns:proc="http://www.example.org/proc" id="8708bf51-14a5-47bb-adad-d394712c8c44" metaInf="&lt;httpRestWebServiceProperties path=&quot;Hello&quot;  methods=&quot;get&quot;  extractRequestInfo=&quot;true&quot;>&#xD;&#xA;&#x9;&lt;responseBodyMapper parameterName=&quot;strOut&quot; charset=&quot;UTF-8&quot;/>&#xD;&#xA;&lt;/httpRestWebServiceProperties>">
   <parameter id="2167900f-1d48-4211-9f3d-71ef3a77624d" input="true" name="strIn" type="String" value=""/>
   <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="false" name="strOut" type="String"/>
+  <parameter id="c4362764-7778-4d99-814b-9538356a58bb" name="version" type="String" value="1.0"/>
   <actionCode id="41e5ac60-96d7-4c6d-bafc-bd10b2811ae4" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
     <link id="f131021b-063d-4a80-9036-a39741c98230" executionCondition="1==2" executionType="OK" generationType="OK_KO" mandatory="1" targetId="ef559ab2-5a88-4599-8ced-bf2fc673eba8"/>
     <metaDataLink id="72844614-627f-41c1-8df4-2e467b3bd2fc" name="envName" target="../Metadata/environment.md#_12ha0A1PEeucEKGg0rk6tw?fileId=_1lt-sA1PEeucEKGg0rk6tw$type=md$name=envName?"/>
@@ -43,7 +44,7 @@
     <children xmi:type="notation:Node" xmi:id="_fe-kMPZdEeqnKfJyayniqA" type="5005"/>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_fe8vAfZdEeqnKfJyayniqA" fontName="Segoe UI"/>
     <element xmi:type="proc:Parameter" href="../../helloWorld.proc#09b1f26d-61a9-4fcc-bed3-c405bdbce3a1?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=strOut?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe8vAvZdEeqnKfJyayniqA" x="288" y="84"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fe8vAvZdEeqnKfJyayniqA" x="300" y="84"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_BtcOEPjOEeqKaLcg-3QcxA" type="2001">
     <children xmi:type="notation:Node" xmi:id="_BtdcMPjOEeqKaLcg-3QcxA" type="5001"/>
@@ -64,6 +65,12 @@
     <styles xmi:type="notation:ShapeStyle" xmi:id="_BtcOEfjOEeqKaLcg-3QcxA" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="../../helloWorld.proc#ef559ab2-5a88-4599-8ced-bf2fc673eba8?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=FileWait?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BtcOEvjOEeqKaLcg-3QcxA" x="108" y="186"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_PfA38A1QEeu93vLGWYUo5g" type="2005">
+    <children xmi:type="notation:Node" xmi:id="_PfG-kA1QEeu93vLGWYUo5g" type="5005"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_PfA38Q1QEeu93vLGWYUo5g" fontName="Segoe UI"/>
+    <element xmi:type="proc:Parameter" href="../../helloWorld.proc#c4362764-7778-4d99-814b-9538356a58bb?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=version?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PfA38g1QEeu93vLGWYUo5g" x="294" y="108"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_apElMfZdEeqnKfJyayniqA"/>
   <element xmi:type="proc:ActionProcess" href="../../helloWorld.proc#8708bf51-14a5-47bb-adad-d394712c8c44?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=helloWorld?"/>
