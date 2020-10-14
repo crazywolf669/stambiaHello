@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <proc:process xmlns:proc="http://www.example.org/proc" id="8708bf51-14a5-47bb-adad-d394712c8c44" metaInf="&lt;httpRestWebServiceProperties path=&quot;Hello&quot;  methods=&quot;get&quot;  extractRequestInfo=&quot;true&quot;>&#xD;&#xA;&#x9;&lt;responseBodyMapper parameterName=&quot;strOut&quot; charset=&quot;UTF-8&quot;/>&#xD;&#xA;&lt;/httpRestWebServiceProperties>">
+  <metaDataLink id="a48eb66b-25fc-4a20-a771-db7c5a80206a" name="term" target="../Metadata/env.md#_xN-kgQ4iEeuEydv4YZVzJQ?fileId=_uSqC4A4iEeuEydv4YZVzJQ$type=md$name=term?"/>
   <parameter id="2167900f-1d48-4211-9f3d-71ef3a77624d" input="true" name="strIn" type="String" value=""/>
   <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="false" name="strOut" type="String"/>
   <parameter id="c4362764-7778-4d99-814b-9538356a58bb" name="version" type="String" value="1.0"/>
@@ -7,7 +8,7 @@
     <link id="f131021b-063d-4a80-9036-a39741c98230" executionCondition="1==2" executionType="OK" generationType="OK_KO" mandatory="1" targetId="ef559ab2-5a88-4599-8ced-bf2fc673eba8"/>
     <metaDataLink id="72844614-627f-41c1-8df4-2e467b3bd2fc" name="envName" target="../Metadata/environment.md#_12ha0A1PEeucEKGg0rk6tw?fileId=_1lt-sA1PEeucEKGg0rk6tw$type=md$name=envName?"/>
     <parameter id="ac522a44-ee70-4d4f-a034-dc8eb7350edc" name="SCRIPTING_LANGUAGE" type="String" value="groovy"/>
-    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;&lt;html>&lt;head>&lt;title>Hello World page&lt;/title>&lt;/head>&lt;body>&lt;h1>Hello ${~/strIn}$ !!&lt;/h1>&lt;p>Version 2.0&lt;/p>&lt;BR/> Environment ${envName}$&lt;/body>&lt;/html>&quot;);</code>
+    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;&lt;html>&lt;head>&lt;title>Hello World page&lt;/title>&lt;/head>&lt;body>&lt;h1>%x{$term/tech:columnName()}x% ${~/strIn}$ !!&lt;/h1>&lt;p>Version ${~/version}$&lt;/p>&lt;BR/> Environment ${envName}$&lt;/body>&lt;/html>&quot;);</code>
   </actionCode>
   <actionCode id="ef559ab2-5a88-4599-8ced-bf2fc673eba8" enable="true" isBeginAction="false" name="FileWait" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.FileWaitActionCodeI">
     <metaDataLink id="319734fa-d16c-451d-85ad-0b3d687f702f" name="var" target="../Metadata/folderDemo.md#_WLiRoPjIEeqKaLcg-3QcxA?fileId=_WCx-QPjIEeqKaLcg-3QcxA$type=md$name=var?"/>
@@ -71,6 +72,12 @@
     <styles xmi:type="notation:ShapeStyle" xmi:id="_PfA38Q1QEeu93vLGWYUo5g" fontName="Segoe UI"/>
     <element xmi:type="proc:Parameter" href="../../helloWorld.proc#c4362764-7778-4d99-814b-9538356a58bb?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=version?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PfA38g1QEeu93vLGWYUo5g" x="294" y="108"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_6C-2UA4iEeuEydv4YZVzJQ" type="2006">
+    <children xmi:type="notation:Node" xmi:id="_6DAEcA4iEeuEydv4YZVzJQ" type="5006"/>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_6C-2UQ4iEeuEydv4YZVzJQ" fontName="Segoe UI"/>
+    <element xmi:type="proc:MetaDataLink" href="../../helloWorld.proc#a48eb66b-25fc-4a20-a771-db7c5a80206a?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6C-2Ug4iEeuEydv4YZVzJQ" x="319" y="246"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_apElMfZdEeqnKfJyayniqA"/>
   <element xmi:type="proc:ActionProcess" href="../../helloWorld.proc#8708bf51-14a5-47bb-adad-d394712c8c44?fileId=8708bf51-14a5-47bb-adad-d394712c8c44$type=proc$name=helloWorld?"/>
