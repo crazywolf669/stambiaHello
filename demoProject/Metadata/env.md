@@ -6,4 +6,8 @@
       <externalize defType="com.stambia.generic.attribute.value" enable="true"/>
     </node>
   </node>
+  <node defType="com.stambia.generic.attribute" id="_4p6LUQ62EeuH5O71Xx3InA" name="envname">
+    <attribute defType="com.stambia.generic.attribute.value" id="_7scvQA62EeuH5O71Xx3InA" value="Development"/>
+    <externalize defType="com.stambia.generic.attribute.value" enable="true"/>
+  </node>
 </md:node>
