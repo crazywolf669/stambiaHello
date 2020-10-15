@@ -1,1 +1,1 @@
-buildPackage -mainProcessWorkspacePath "demoProject/Process/helloWorld.proc" -package "./helloWorld.pck"
+buildPackage -mainProcessWorkspacePath "demoProject/Process/helloWorld.proc" -package "./helloWorld.pck" -includeDocumentation true
