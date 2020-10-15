@@ -4,11 +4,11 @@
   <metaDataLink id="fcc4ad02-004c-4376-acc7-60bb4a048680" name="envname" target="../Metadata/env.md#_4p6LUQ62EeuH5O71Xx3InA?fileId=_uSqC4A4iEeuEydv4YZVzJQ$type=md$name=envname?"/>
   <parameter id="2167900f-1d48-4211-9f3d-71ef3a77624d" input="true" name="strIn" type="String" value=""/>
   <parameter id="09b1f26d-61a9-4fcc-bed3-c405bdbce3a1" output="false" name="strOut" type="String"/>
-  <parameter id="c4362764-7778-4d99-814b-9538356a58bb" name="version" type="String" value="2.0"/>
+  <parameter id="c4362764-7778-4d99-814b-9538356a58bb" name="version" type="String" value="1.0"/>
   <actionCode id="41e5ac60-96d7-4c6d-bafc-bd10b2811ae4" isBeginAction="false" name="Scripting" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.ScriptingActionCodeI">
     <link id="f131021b-063d-4a80-9036-a39741c98230" executionCondition="1==2" executionType="OK" generationType="OK_KO" mandatory="1" targetId="ef559ab2-5a88-4599-8ced-bf2fc673eba8"/>
     <parameter id="ac522a44-ee70-4d4f-a034-dc8eb7350edc" name="SCRIPTING_LANGUAGE" type="String" value="groovy"/>
-    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;&lt;html>&lt;head>&lt;title>Hello World page&lt;/title>&lt;/head>&lt;body style=\&quot;background-color:powderblue;\&quot;>&lt;h1 style=\&quot;text-align:center;\&quot;>%x{$term/tech:columnName()}x% ${~/strIn}$ !!&lt;/h1>&lt;p style=\&quot;text-align:right;font-size:20px;\&quot;>Environment &lt;span style=\&quot;color:green;\&quot;>%x{$envname/tech:columnName()}x%&lt;/span> / Version &lt;span style=\&quot;color:blue;\&quot;>${~/version}$&lt;/span>&lt;/p>&lt;/body>&lt;/html>&quot;);</code>
+    <code>__ctx__.publishVariable(&quot;~/strOut&quot;,&quot;&lt;html>&lt;head>&lt;title>Hello World page&lt;/title>&lt;/head>&lt;body style=\&quot;background-color:powderblue;\&quot;>&lt;h1 style=\&quot;text-align:center;\&quot;>%x{$term/tech:columnName()}x% ${~/strIn}$ !!&lt;/h1>&lt;p style=\&quot;text-align:right;font-size:20px;\&quot;>Environnement &lt;span style=\&quot;color:green;\&quot;>%x{$envname/tech:columnName()}x%&lt;/span> / Version &lt;span style=\&quot;color:blue;\&quot;>${~/version}$&lt;/span>&lt;/p>&lt;/body>&lt;/html>&quot;);</code>
   </actionCode>
   <actionCode id="ef559ab2-5a88-4599-8ced-bf2fc673eba8" enable="true" isBeginAction="false" name="FileWait" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.FileWaitActionCodeI">
     <metaDataLink id="319734fa-d16c-451d-85ad-0b3d687f702f" name="var" target="../Metadata/folderDemo.md#_WLiRoPjIEeqKaLcg-3QcxA?fileId=_WCx-QPjIEeqKaLcg-3QcxA$type=md$name=var?"/>
