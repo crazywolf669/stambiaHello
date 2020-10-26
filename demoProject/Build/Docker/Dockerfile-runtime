@@ -13,6 +13,7 @@ RUN chmod -R 755 /opt/stambia/
 
 COPY ./modules /opt/stambia/stambiaRuntime/modules
 COPY ./engineParameters.xml /opt/stambia/stambiaRuntime/properties/
+COPY ./deliveries /opt/stambia/stambiaRuntime/build/deliveries
 
 WORKDIR /opt/stambia/stambiaRuntime
 
